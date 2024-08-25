@@ -4,7 +4,7 @@
 // Mostrar todos los Nodos que superen un valor determinado.
 
 
-class Node{
+class Node2{
     constructor(value = 0, next = null){
         this.value = value;
         this.next = null;
@@ -12,9 +12,9 @@ class Node{
 }
 
 
-class LinkedList{
+class LinkedList2{
     constructor(value){
-        const nodo = new Node(value);
+        const nodo = new Node2(value);
         this.head = null;
         this.length = 0;
     }
@@ -31,7 +31,7 @@ class LinkedList{
 
 
      insert(value){
-        const newNode = new Node(value);
+        const newNode = new Node2(value);
 
         if(this.head === null){
             this.head = newNode;// lista vacia, se agrega sin mas 
@@ -75,7 +75,7 @@ function genListaAleatoria(lista, cantidad, maxValor){
         
     }
 }
-const ll = new LinkedList(9);
+const ll = new LinkedList2(9);
 genListaAleatoria(ll,10,100);
 
 //const ll = new LinkedList(9);
