@@ -84,7 +84,7 @@ class LinkedList{
 
     insert(value){
         const newNode = new Node(value);
-        console.log("insert")
+        // console.log("insert")
 
         if(this.existe(value)){
             console.log(`El dato ${value} ya existe en la lista.`);
